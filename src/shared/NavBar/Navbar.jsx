@@ -16,21 +16,21 @@ const NavBar = () => {
         {/* Menu Items */}
         <ul className="flex space-x-6">
           <li>
-            <a href="/" className="text-slate-900 text-2xl font-semibold hover:text-gray-600 duration-300">Home</a>
+            <a href="/" className="text-slate-900 text-2xl font-semibold hover:text-gray-400 duration-300">Home</a>
           </li>
           <li>
-            <a href="/about" className="text-slate-900 text-2xl font-semibold hover:text-gray-600 duration-300">Destination</a>
+            <a href="/" className="text-slate-900 text-2xl font-semibold hover:text-gray-400 duration-300">Destination</a>
           </li>
           {/* <li>
-            <a href="/services" className="text-slate-900 text-2xl font-semibold hover:text-gray-600 duration-300">Services</a>
+            <a href="/services" className="text-slate-900 text-2xl font-semibold hover:text-gray-400 duration-300">Services</a>
           </li> */}
           <li>
-            <a href="/contact" className="text-slate-900 text-2xl font-semibold hover:text-gray-600 duration-300">Client</a>
+            <a href="/" className="text-slate-900 text-2xl font-semibold hover:text-gray-400 duration-300">Client</a>
           </li>
         </ul>
 
         {/* Contact Us Button */}
-        <button className="bg-green-500 text-white text-2xl hover:bg-green-700 duration-300  py-2 px-4 rounded-lg">
+        <button className="bg-green-500 text-white text-xl hover:bg-green-700 duration-300  p-2 rounded-lg">
           Contact Us
         </button>
       </div>
