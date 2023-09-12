@@ -1,4 +1,7 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const TopServices = () => {
     return (
@@ -9,9 +12,27 @@ const TopServices = () => {
         }}>
             <div className='flex justify-between items-center'>
                 <div>
-                    <p className='text-green-500 text-2xl font-semibold mb-6'>Travel Point</p>
-                    <h1 className='text-6xl font-bold '>We offer best Services</h1>
-                    <div className='my-10 bg-gray-50 shadow-lg rounded-lg'>
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        className='relative'>
+                        <p className='text-green-500 text-2xl font-semibold mb-6'>Travel Point</p>
+                        <img className='h-8 absolute -top-1 right-[450px]' src="https://i.ibb.co/gTByHzx/rainbow.png" alt="" />
+                    </div>
+                    <h1 data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        className='text-6xl font-bold '>We offer best Services</h1>
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        className='my-10 bg-gray-50 shadow-lg rounded-lg'>
                         <div className='flex items-center gap-5 p-6 hover:bg-white hover:shadow-lg hover:-translate-x-[35px] duration-500 rounded-tl-lg rounded-tr-lg'>
                             <div>
                                 <img className='h-8' src="https://i.ibb.co/VxMWc37/76-764510-paper-plane-png.png" alt="" />
@@ -43,16 +64,26 @@ const TopServices = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <img className='h-[700px]' src="https://i.ibb.co/d23Wrcx/tourist-presenting-something.png" alt="" />
                 </div>
             </div>
             <div className='absolute -bottom-16 right-96 hover:-translate-y-1/2 duration-500'>
                 <div className="w-40 bg-white rounded-lg overflow-hidden shadow-lg">
-                    <div className='bg-orange-400 flex items-center justify-center p-6 '>
+                    <div data-aos="fade-up" className='bg-orange-400 flex items-center justify-center p-6 '>
                         <img src="https://i.ibb.co/1Lp5ZZR/placeholder.png" alt="Product Image" className="h-12 w-12" />
                     </div>
-                    <div className="p-4">
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        className="p-4">
                         <h3 className="text-xl font-semibold text-gray-800">Uk.London</h3>
 
                         <div className="flex items-center mt-2">

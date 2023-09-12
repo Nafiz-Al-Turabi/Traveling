@@ -1,23 +1,45 @@
-// HappyClient.js
-import React, { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 const HappyClient = () => {
 
     return (
         <div className="my-20">
-            <h3 className='text-2xl text-green-500 text-center font-semibold'>Testimonial</h3>
+            <div className='relative'>
+                <h3 className='text-2xl text-green-500 text-center font-semibold'>Testimonial</h3>
+                <img className='h-8 absolute -top-1 right-[520px]' src="https://i.ibb.co/gTByHzx/rainbow.png" alt="" />
+            </div>
             <h1 className='text-6xl font-bold text-center mt-5'>What our happy clients says</h1>
             <div className='mt-32 flex items-center gap-5'>
                 <div className='relative'>
-                    <div className='h-[500px] w-[350px] bg-gray-300 rounded-3xl border-[5px] border-red-100'></div>
-                    <div className='absolute -top-20 -right-8'>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center" className='h-[500px] w-[350px] bg-gray-300 rounded-3xl border-[5px] border-red-100'></div>
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1500"
+                        className='absolute -top-20 -right-8'>
                         <img className='h-[500px] ' src="https://i.ibb.co/m6Knggz/smiley-woman-posing-her-baggage.png" alt="" />
                     </div>
-                    <div className='absolute -bottom-8 right-5'>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1500"
+                        className='absolute -bottom-8 right-5'>
                         <img className='h-20' src="https://i.ibb.co/0sz9kx7/instagram.png" alt="" />
                     </div>
-                    <div className='absolute top-40 -left-10'>
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1500" className='absolute top-40 -left-10'>
                         <div className='h-20 w-20 bg-yellow-500 rounded-full'>
                             <div className='flex justify-center items-center '>
                                 <img className='h-4 mt-4' src="https://i.ibb.co/9VZBcgf/star.png" alt="" />

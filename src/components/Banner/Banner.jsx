@@ -12,10 +12,10 @@ const Banner = () => {
                     <p className='my-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam officiis, aliquam quaerat ab itaque laudantium, saepe repudiandae quibusdam soluta deserunt fugit perspiciatis dolor praesentium laboriosam consectetur voluptas facilis laborum!</p>
                     <div className='flex justify-between items-center'>
                         <button className='bg-green-500 p-3 text-white font-semibold rounded-lg'>Get Started</button>
-                        <div className='bg-orange-500 p-3 rounded-e-full rounded-bl-full'>
-                            <input className='bg-orange-500 text-slate-900 focus:outline-none pl-3' type="text" placeholder='Search...' />
-                            <button className='bg-white rounded-full h-8 w-8'>Q</button>
-                        </div>
+                        <form className='bg-orange-500 p-3 rounded-e-full rounded-bl-full relative'>
+                            <input className='bg-orange-500 w-56 text-slate-900 focus:outline-none pl-3' type="text" placeholder='Search...' required />
+                            <button className='bg-white rounded-full h-8 w-8 hover:bg-slate-200 active:scale-95 absolute top-2 right-2  '>Q</button>
+                        </form>
                     </div>
                 </div>
             </div>
